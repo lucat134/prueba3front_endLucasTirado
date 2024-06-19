@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Usuario</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../js/usuario.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Agregar Usuario</h1>
+            <hr>
+            <form>
+                
+                <div class="mb-3">
+                  <label for="txt_id_usuario" class="form-label">RUT</label>
+                  <input type="text" class="form-control" id="txt_id_usuario" aria-describedby="ayuda_id">
+                  <div id="ayuda_id" class="form-text">Ingrese el nuevo RUT</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="txt_dv" class="form-label">Digito Verificador</label>
+                    <input type="text" class="form-control" id="txt_dv" aria-describedby="ayuda_dv">
+                    <div id="ayuda_dv" class="form-text">Ingrese el nuevo DV</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="txt_nombres" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="txt_nombres" aria-describedby="ayuda_nombres">
+                    <div id="ayuda_nombres" class="form-text">Ingrese el nuevo nombre.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="txt_apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="txt_apellidos" aria-describedby="ayuda_apellidos">
+                    <div id="ayuda_apellidos" class="form-text">Ingrese nuevos apellidos</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="txt_email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="txt_email" aria-describedby="ayuda_email">
+                    <div id="ayuda_email" class="form-text">Ingrese el nuevo email.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="txt_celular" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="txt_celular" aria-describedby="ayuda_celular">
+                    <div id="ayuda_celular" class="form-text">Ingrese el nuevo Celular.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="txt_username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="txt_username" aria-describedby="ayuda_username">
+                    <div id="ayuda_username" class="form-text">Ingrese el nuevo username</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="txt_password" class="form-label">Password</label>
+                    <input type="text" class="form-control" id="txt_password" aria-describedby="ayuda_password">
+                    <div id="ayuda_password" class="form-text">Ingrese nueva passsword</div>
+                  </div>
+           
+                <input type="button" value="Enviar" class="btn btn-primary" onclick="agregarUsuario();">
+              </form>
+
+        </div>
+    </body>
+</html>
